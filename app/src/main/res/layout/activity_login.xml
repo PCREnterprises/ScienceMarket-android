@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mappie.sciencemarket.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/top"
+        android:layout_marginBottom="40dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mid"
+        android:layout_below="@+id/top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logintext"
+            android:text="LOGIN"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/user_name"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logintext"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="36dp"
+            android:hint="USERNAME"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <EditText
+            android:id="@+id/user_password"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:layout_below="@+id/user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="PASSWORD"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="71dp"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mid"
+
+
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:background="@drawable/buttonstylepink"
+           android:textColor="#fff"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+
+
+
+            android:onClick="onLogin"
+
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openReg"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+           android:background="@drawable/buttonstylepink"
+            android:drawableRight="@drawable/ic_person_add_black_24dp"
+
+            android:layout_toRightOf="@+id/btnLogin"
+            android:text="Register "
+            />
+        <Button
+            android:id="@+id/recovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openRecover"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstylepink"
+
+            android:layout_below="@id/button2"
+            android:text="Recover Password"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
